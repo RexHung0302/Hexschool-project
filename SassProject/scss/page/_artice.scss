@@ -1,0 +1,20 @@
+.content-text-hide-1 {
+    @include img-message(96px, 96px, rgb(218, 218, 218), '../img/img1.png');
+}
+
+.content-text-hide-2 {
+    @include img-message(96px, 96px, rgb(218, 218, 218), '../img/img2.png');
+}
+
+.title-text-hide {
+    @include img-message(208px, 208px, rgb(218, 218, 218), '../img/img3.png');
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}

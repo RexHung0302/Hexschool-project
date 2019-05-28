@@ -1,0 +1,32 @@
+// 圖片取代文字
+@mixin img-message($width, $height, $bgcolor, $url) {
+    width: $width;
+    height: $height;
+    background-color: $bgcolor;
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    border: 1px solid rgba(184, 184, 184, 0.872);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+// 標籤
+@mixin top-tag($width, $height, $bgcolor, $color) {
+    width: $width;
+    height: $height;
+    background-color: $bgcolor;
+    color: $color;
+    font-weight: bold;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: -10px;
+    right: -30px;
+}
