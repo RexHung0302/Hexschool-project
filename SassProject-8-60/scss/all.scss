@@ -1,18 +1,18 @@
-@import 'valuable';
+@import './utils/valuable';
 // Reset CSS
-@import 'normalize';
+@import './base/normalize';
 // Mixin
-@import 'mixin/mixin';
+@import './utils/mixin';
 // Media
 @import './media/media';
 // Base
-@import 'base';
+@import './base/base';
 // Module
-@import './module/grid';
-@import './module/spacing';
-@import './module/align';
+@import './helper/spacing';
+@import './helper/align';
 // Layout
 @import './layout/header';
 @import './layout/footer';
+@import './layout/grid';
 // Main CSS
-@import 'page/artice';
+@import 'pages/artice';
