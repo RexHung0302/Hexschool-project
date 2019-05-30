@@ -1,0 +1,65 @@
+/*------------------------------------*\
+    $GRID
+\*------------------------------------*/
+
+$gutter-wigth: 20px !default;
+$grid-columns: 24 !default;
+// 格線系統
+.col-container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: ($gutter-wigth / 2);
+    padding-right: ($gutter-wigth / 2);
+}
+
+.noGutters {
+    margin-right: 0;
+    margin-left: 0;
+    %noGuttersP {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @for $i from 1 through $grid-columns {
+        .col-#{ $i } {
+            @extend %noGuttersP
+        }
+    }
+}
+
+;
+//
+// row
+//
+.col-row {
+    display: flex;
+    margin-left: -($gutter-wigth / 2);
+    margin-right: -($gutter-wigth / 2);
+    flex-wrap: wrap;
+}
+
+//
+// col
+//
+%col {
+    position: relative;
+    min-height: 1px;
+    padding-left: ($gutter-wigth / 2);
+    padding-right: ($gutter-wigth / 2);
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+
+@for $i from 1 through $grid-columns {
+    .col-#{ $i } {
+        @extend %col
+    }
+}
+
+@include pad {
+    @for $i from 1 through $grid-columns {
+        .col-#{ $i } {
+            max-width: 100% * ( $i / $grid-columns);
+            flex: 0 0 (100% * ( $i / $grid-columns));
+        }
+    }
+}

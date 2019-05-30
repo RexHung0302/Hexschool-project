@@ -1,0 +1,19 @@
+@mixin pad {
+    @media screen and (min-width: 960px) {
+        font-size: 18px;
+        @content
+    }
+}
+
+@mixin md-mobile {
+    @media screen and (min-width: 767px) {
+        @content
+    }
+}
+
+@mixin sm-mobile {
+    @media screen and (min-width: 414px) {
+        font-size: $fs-sm;
+        @content
+    }
+}

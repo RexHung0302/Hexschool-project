@@ -1,0 +1,72 @@
+/*------------------------------------*\
+    $base
+\*------------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: $h-base;
+}
+
+body {
+    width: $w-base;
+    height: $h-base;
+    font-family: $ff-base;
+    font-size: $fs-base;
+    background-color: $bc-base;
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+/*------------------------------------*\
+    $共用Class
+\*------------------------------------*/
+
+// 清除浮動
+.clearfix {
+    overflow: hidden;
+}
+
+.transitionAll {
+    transition: all $t-Time;
+}
+
+.wrap {
+    max-width: $w-base;
+    margin: 0 auto;
+}
+
+.content {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__span {
+        position: absolute;
+    }
+    &__img {
+        z-index: 99;
+        transform: scale(1);
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+            opacity: 1;
+        }
+    }
+}
+
+.bgPrimary {
+    background-color: $bc-Primary;
+}
+
+.bgSecondry {
+    background-color: $bc-Secondry;
+}
+
+.bgInfo {
+    background-color: $bc-Info;
+}

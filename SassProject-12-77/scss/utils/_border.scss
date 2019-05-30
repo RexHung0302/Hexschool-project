@@ -1,0 +1,36 @@
+// border-color
+$themes: ( 'primary': $bc-Primary, 'secondry': $bc-Secondry, 'info': $bc-Info);
+@each $key,
+$value in $themes {
+    .border-#{ $key } {
+        border-color: $value
+    }
+}
+
+.rounded {
+    border-radius: 20px;
+}
+
+.rounded-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.rounded-right {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.rounded-left {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.rounded-bottom {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
