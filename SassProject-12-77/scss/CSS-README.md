@@ -19,10 +19,10 @@
 ### E -- Elements (元素) __  ex. listGroup__ul
 ### M -- Modifire (修飾福) --  ex.listGroup--active
 
-##4.階層限制在三層內(max:4)
+## 4.階層限制在三層內(max:4)
 
-##5.不使用 id (js hook 使用 js開頭命名)
+## 5.不使用 id (js hook 使用 js開頭命名)
 
 ### ex. js-alert
 
-##6. 小駝峰式命名
+## 6. 小駝峰式命名
