@@ -1,26 +1,26 @@
 // 小圖
 .mdImg {
     @include imgContent(96px, 96px);
+    &__span {
+        position: absolute;
+        z-index: -1;
+    }
     // 圖片隱藏文字
     &--textHide {
         @include textHide(rgb(218, 218, 218));
-        &__span {
-            position: absolute;
-            z-index: -1;
-        }
     }
 }
 
 // 大圖
 .lgImg {
     @include imgContent(208px, 208px);
+    &__span {
+        position: absolute;
+        z-index: -1;
+    }
     // 圖片隱藏文字
     &--textHide {
         @include textHide(rgb(218, 218, 218));
-        &__span {
-            position: absolute;
-            z-index: -1;
-        }
     }
 }
 

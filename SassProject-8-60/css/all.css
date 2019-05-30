@@ -2268,6 +2268,9 @@ html {
   -ms-flex-align: center;
   align-items: center;
   text-align: center; }
+  .mdImg__span {
+    position: absolute;
+    z-index: -1; }
   .mdImg--textHide {
     background-color: #dadada;
     background-repeat: no-repeat;
@@ -2288,9 +2291,6 @@ html {
       -ms-transform: scale(1.2);
       transform: scale(1.2);
       border: 1px solid black; }
-    .mdImg--textHide__span {
-      position: absolute;
-      z-index: -1; }
 
 .lgImg {
   width: 208px;
@@ -2305,6 +2305,9 @@ html {
   -ms-flex-align: center;
   align-items: center;
   text-align: center; }
+  .lgImg__span {
+    position: absolute;
+    z-index: -1; }
   .lgImg--textHide {
     background-color: #dadada;
     background-repeat: no-repeat;
@@ -2325,9 +2328,6 @@ html {
       -ms-transform: scale(1.2);
       transform: scale(1.2);
       border: 1px solid black; }
-    .lgImg--textHide__span {
-      position: absolute;
-      z-index: -1; }
 
 ul {
   list-style: none;
