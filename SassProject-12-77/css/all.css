@@ -318,10 +318,13 @@ template {
   display: none; }
 
 /*------------------------------------*\
-    $MEDIA
+    $MIXIN
 \*------------------------------------*/
 /*------------------------------------*\
-    $HELPER (自己寫的Module)
+    $Media
+\*------------------------------------*/
+/*------------------------------------*\
+    $UTILS (自己寫的Module)
 \*------------------------------------*/
 /*------------------------------------*\
     $align
@@ -377,13 +380,6 @@ template {
   max-width: 100%;
   padding-left: 10px;
   padding-right: 10px; }
-
-.noGutters {
-  margin-right: 0;
-  margin-left: 0; }
-  .noGutters .col-1, .noGutters .col-2, .noGutters .col-3, .noGutters .col-4, .noGutters .col-5, .noGutters .col-6, .noGutters .col-7, .noGutters .col-8, .noGutters .col-9, .noGutters .col-10, .noGutters .col-11, .noGutters .col-12, .noGutters .col-13, .noGutters .col-14, .noGutters .col-15, .noGutters .col-16, .noGutters .col-17, .noGutters .col-18, .noGutters .col-19, .noGutters .col-20, .noGutters .col-21, .noGutters .col-22, .noGutters .col-23, .noGutters .col-24 {
-    padding-left: 0;
-    padding-right: 0; }
 
 .col-row {
   display: -webkit-box;
@@ -527,6 +523,13 @@ template {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%; } }
 
+.noGutters {
+  margin-right: 0;
+  margin-left: 0; }
+  .noGutters .col-1, .noGutters .col-2, .noGutters .col-3, .noGutters .col-4, .noGutters .col-5, .noGutters .col-6, .noGutters .col-7, .noGutters .col-8, .noGutters .col-9, .noGutters .col-10, .noGutters .col-11, .noGutters .col-12, .noGutters .col-13, .noGutters .col-14, .noGutters .col-15, .noGutters .col-16, .noGutters .col-17, .noGutters .col-18, .noGutters .col-19, .noGutters .col-20, .noGutters .col-21, .noGutters .col-22, .noGutters .col-23, .noGutters .col-24 {
+    padding-left: 0;
+    padding-right: 0; }
+
 /*------------------------------------*\
     $UTILS
 \*------------------------------------*/
@@ -576,7 +579,7 @@ html {
   height: 100%; }
 
 body {
-  width: 1200px;
+  width: 100%;
   height: 100%;
   font-family: "Open Sans";
   font-size: 16px;

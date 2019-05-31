@@ -12,24 +12,6 @@ $grid-columns: 24 !default;
     padding-right: ($gutter-wigth / 2);
 }
 
-.noGutters {
-    margin-right: 0;
-    margin-left: 0;
-    %noGuttersP {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    @for $i from 1 through $grid-columns {
-        .col-#{ $i } {
-            @extend %noGuttersP
-        }
-    }
-}
-
-;
-//
-// row
-//
 .col-row {
     display: flex;
     margin-left: -($gutter-wigth / 2);
@@ -37,9 +19,6 @@ $grid-columns: 24 !default;
     flex-wrap: wrap;
 }
 
-//
-// col
-//
 %col {
     position: relative;
     min-height: 1px;
@@ -60,6 +39,20 @@ $grid-columns: 24 !default;
         .col-#{ $i } {
             max-width: 100% * ( $i / $grid-columns);
             flex: 0 0 (100% * ( $i / $grid-columns));
+        }
+    }
+}
+
+.noGutters {
+    margin-right: 0;
+    margin-left: 0;
+    %noGuttersP {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @for $i from 1 through $grid-columns {
+        .col-#{ $i } {
+            @extend %noGuttersP
         }
     }
 }

@@ -2,7 +2,7 @@
     $VALUABLE
 \*------------------------------------*/
 
-@import './utils/valuable';
+@import './helper/valuable';
 
 /*------------------------------------*\
     $RESET
@@ -11,17 +11,17 @@
 @import './base/normalize';
 
 /*------------------------------------*\
-    $MEDIA
+    $MIXIN
 \*------------------------------------*/
 
-@import './media/media';
+@import './mixin/mixin';
 
 /*------------------------------------*\
-    $HELPER (自己寫的Module)
+    $UTILS (自己寫的Module)
 \*------------------------------------*/
 
-@import './helper/align';
-@import './helper/grid';
+@import './utils/align';
+@import './utils/grid';
 
 /*------------------------------------*\
     $UTILS
